@@ -22,6 +22,7 @@ public class Program
             app.UseHsts();
         }
 
+        app.UsePathBase("/subfolder");
         app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
         app.UseHttpsRedirection();
 
